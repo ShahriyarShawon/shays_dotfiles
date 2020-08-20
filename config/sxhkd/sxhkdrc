@@ -72,8 +72,8 @@ super + d
     rofi -show run -config ~/.config/rofi/config
 
 # rofi tab switcher
-super + Tab 
-    rofi -show window -config ~/.config/rofi/config
+#super + Tab 
+#    rofi -show window -config ~/.config/rofi/config
 
 # Terminal
 super + Return
@@ -81,10 +81,13 @@ super + Return
 
 # screenshot area and copy
 super + shift + Print
-    gscreenshot --clip --selection
+    maim -su | xclip -selection clipboard -t image/png -i
 # screenshot area and copy and save and preview 
 super + Print
-    gscreenshot --clip --selection --open --filename ~/Pictures/Screenshots/
+    maim -su > $HOME/Pictures/Screenshots/"screenshot $(date +%c).png" 
 # rofi emoji
 super + e
     rofi -show emoji -modi emoji -config ~/.config/rofi/config
+# rofi copy link to bookmarks
+#super + shift + d
+#    add_to_bookmarks.sh
