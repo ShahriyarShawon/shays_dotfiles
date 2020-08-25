@@ -64,7 +64,6 @@ export PS1="\[\e[32m\]\`parse_git_branch\`\[\e[m\] \[\e[36m\]\w\[\e[m\] \[\e[35m
 
 export HKRC="~/.config/sxhkd/sxhkdrc"
 export PATH=$PATH:$HOME/Documents/scripts
-
 #Aliases
 
 ## SXHDK stuff
@@ -78,7 +77,7 @@ alias bashrc="vim ~/.bashrc"
 alias rbash="source ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
 alias kwinshortcuts="qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.shortcutNames"
-alias sshpi="ssh pi@10.0.0.14"
+alias pi="ssh pi@10.0.0.14"
 alias feh="feh -x --scale-down --auto-zoom"
 alias du="du -h"
 alias n="nnn"
@@ -89,4 +88,6 @@ function record () {
 	ffmpeg -video_size $1x$2 -framerate 25 -f x11grab -i :0.0+0,0 -f alsa -ac 2 -i hw:0 $3.mkv
 }
 
-neofetch 
+#cat /home/shahriyar/.cache/wal/sequences
+pfetch
+
