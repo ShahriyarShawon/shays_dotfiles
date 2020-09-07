@@ -69,19 +69,29 @@ set shiftwidth=4
 set smartindent
 set softtabstop=4
 
-" Set normal tabs for Makefiles, these files are picky
-autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
-
 
 set number
 set background=dark
 set autoindent
 set visualbell
-
-
+filetype plugin on
 set pastetoggle=<F3>
+
+
+" Autocmds
+" autocmd {Event to watch for} {Pattern to filter for} {command to run}
+"" Set normal tabs for Makefiles, these files are picky
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+
+
+" Disable highlight when <leader><cr> is pressed
+map <silent> <leader><cr> :noh<cr>
+
+
+
+
+
+
 
 

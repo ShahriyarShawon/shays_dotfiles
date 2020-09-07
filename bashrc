@@ -7,9 +7,6 @@
 
 # Shahriyars configs
 
-# Vim mode 
-#set -o vi
-
 #Exports
 # get current branch in git repo
 function parse_git_branch() {
@@ -77,11 +74,11 @@ alias bashrc="vim ~/.bashrc"
 alias rbash="source ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
 alias kwinshortcuts="qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.shortcutNames"
-alias pi="ssh pi@10.0.0.14"
+alias pi="ssh pi@10.0.0.100"
 alias feh="feh -x --scale-down --auto-zoom"
 alias du="du -h"
 alias n="nnn"
-
+alias ltex="latexmk -pdf -pvc"
 #Functions
 
 function record () {

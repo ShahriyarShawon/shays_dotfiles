@@ -1,90 +1,30 @@
-## Kwin Stuff
-
-# Close Window
-super + q
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Close"
-
-# Maximize Window
-super + shift + Return
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Maximize"
-
-# Minimize Window
-super + m
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Minimize"
-
-# Window to Upper Left
-super + shift + U
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Top Left"
-    
-# Window to Upper Right 
-super + shift + I
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Top Right"
- 
-# Window to Lower Left 
-super + shift + J
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Bottom Left" 
- 
-# Window to Lower Right
-super + shift + K
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Bottom Right"
-
-# Window to Left 
-super + shift + Left
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Left"
-
-# Window to Right 
-super + shift + Right
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Right"
-
-# Window to Top 
-super + shift + Up
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Top"
-
-# Window to Bottom 
-super + shift + Down
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Window Quick Tile Bottom"
-
-# Switch to Window to the Right 
-super + alt + Right
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Switch Window Right"
-
-# Switch to Window to the Left 
-super + alt + Left
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Switch Window Left"
-
-# Switch to Window Up 
-super + alt + Up
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Switch Window Up"
-
-# Switch to Window Down 
-super + alt + Down 
-    qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut "Switch Window Down"
-
-## End of Kwin stuff
-
-
 # refresh sxhkd
 super + r
     pkill -SIGUSR1 sxhkd
 
 # Show all commands
 super + d
-    rofi -show run -theme ~/.cache/wal/colors-rofi-dark.rasi
+    rofi -show run 
 
 # rofi emoji
 super + e
-    rofi -show emoji -modi emoji -theme ~/.cache/wal/colors-rofi-dark.rasi
+    rofi -show emoji -modi emoji 
 
 # show all apps rofi
 super + space 
-    rofi -show drun -theme ~/.cache/wal/colors-rofi-dark.rasi
-# rofi tab switcher
-#super + Tab 
-#    rofi -show window -config ~/.config/rofi/config
+    rofi -show drun 
 
 # Terminal
 super + Return
     alacritty
+
+# Firefox
+super + f
+    firefox
+
+# Thunar
+super + t
+    thunar
 
 # screenshot area and copy and save and preview 
 super + Print
