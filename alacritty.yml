@@ -99,7 +99,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "Jetbrains Mono" 
+    family: Jetbrains Mono
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -139,7 +139,7 @@ font:
 
   # Point size
   #size: 11.0
-  size: 10 
+  size: 10
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -315,7 +315,7 @@ font:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 #background_opacity: 1.0
-background_opacity: .95
+#background_opacity: .95
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -701,32 +701,125 @@ background_opacity: .95
 
 
 # Colors (One Dark)
+#colors:
+#  # Default colors
+#  primary:
+#    background: '0x1e2127'
+#    foreground: '0xabb2bf'
+#
+#    # Bright and dim foreground colors
+#    #
+#    # The dimmed foreground color is calculated automatically if it is not present.
+#    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
+#    # is `false`, the normal foreground color will be used.
+#    #dim_foreground: '0x9a9a9a'
+#    bright_foreground: '0xe6efff'
+#
+#  # Cursor colors
+#  #
+#  # Colors which should be used to draw the terminal cursor. If these are unset,
+#  # the cursor color will be the inverse of the cell color.
+#  #cursor:
+#  #  text: '0x000000'
+#  #  cursor: '0xffffff'
+#
+#  # Normal colors
+#  normal:
+#    black:   '0x1e2127'
+#    red:     '0xe06c75'
+#    green:   '0x98c379'
+#    yellow:  '0xd19a66'
+#    blue:    '0x61afef'
+#    magenta: '0xc678dd'
+#    cyan:    '0x56b6c2'
+#    white:   '0x828791'
+#
+#  # Bright colors
+#  bright:
+#    black:   '0x5c6370'
+#    red:     '0xe06c75'
+#    green:   '0x98c379'
+#    yellow:  '0xd19a66'
+#    blue:    '0x61afef'
+#    magenta: '0xc678dd'
+#    cyan:    '0x56b6c2'
+#    white:   '0xe6efff'
+#
+#  # Dim colors
+#  #
+#  # If the dim colors are not set, they will be calculated automatically based
+#  # on the `normal` colors.
+#  dim:
+#    black:   '0x1e2127'
+#    red:     '0xe06c75'
+#    green:   '0x98c379'
+#    yellow:  '0xd19a66'
+#    blue:    '0x61afef'
+#    magenta: '0xc678dd'
+#    cyan:    '0x56b6c2'
+#    white:   '0x828791'
+#
+#  # Indexed Colors
+#  #
+#  # The indexed colors include all colors from 16 to 256.
+#  # When these are not set, they're filled with sensible defaults.
+#  #indexed_colors:
+#  #  - { index: 16, color: '0x000000' }
+# Colors (Gruvbox dark)
+#colors:
+#  # Default colors
+#  primary:
+#    # hard contrast: background = '0x1d2021'
+#    background: '0x282828'
+#    # soft contrast: background = '0x32302f'
+#    foreground: '0xebdbb2'
+#
+#  # Normal colors
+#  normal:
+#    black:   '0x282828'
+#    red:     '0xcc241d'
+#    green:   '0x98971a'
+#    yellow:  '0xd79921'
+#    blue:    '0x458588'
+#    magenta: '0xb16286'
+#    cyan:    '0x689d6a'
+#    white:   '0xa89984'
+#
+#  # Bright colors
+#  bright:
+#    black:   '0x928374'
+#    red:     '0xfb4934'
+#    green:   '0xb8bb26'
+#    yellow:  '0xfabd2f'
+#    blue:    '0x83a598'
+#    magenta: '0xd3869b'
+#    cyan:    '0x8ec07c'
+#    white:   '0xebdbb2'
+
+
+# Flat remix
 colors:
-  # Default colors
   primary:
-    background: '#282c34'
-    foreground: '#abb2bf'
+    background: '0x272a34'
+    foreground: '0xFFFFFF'
 
-  # Normal colors
   normal:
-    # NOTE: Use '#131613' for the `black` color if you'd like to see
-    # black text on the background.
-    black:   '#282c34'
-    red:     '#e06c75'
-    green:   '#98c379'
-    yellow:  '#d19a66'
-    blue:    '#61afef'
-    magenta: '#c678dd'
-    cyan:    '#56b6c2'
-    white:   '#abb2bf'
+    black:   '0x1F2229'
+    red:     '0xEC0101'
+    green:   '0x47D4B9'
+    yellow:  '0xFF8A18'
+    blue:    '0x277FFF'
+    magenta: '0xD71655'
+    cyan:    '0x05A1F7'
+    white:   '0xFFFFFF'
 
-  # Bright colors
+
   bright:
-    black:   '#5c6370'
-    red:     '#e06c75'
-    green:   '#98c379'
-    yellow:  '#d19a66'
-    blue:    '#61afef'
-    magenta: '#c678dd'
-    cyan:    '#56b6c2'
-    white:   '#ffffff'
+    black:   '0x1F2229'
+    red:     '0xD41919'
+    green:   '0x5EBDAB'
+    yellow:  '0xFEA44C'
+    blue:    '0x367bf0'
+    magenta: '0xBF2E5D'
+    cyan:    '0x49AEE6'
+    white:   '0xFFFFFF'

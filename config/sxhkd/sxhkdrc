@@ -18,10 +18,6 @@ super + space
 super + Return
     alacritty
 
-# Firefox
-super + f
-    firefox
-
 # Thunar
 super + t
     thunar
@@ -29,3 +25,7 @@ super + t
 # screenshot area and copy and save and preview 
 super + Print
     flameshot gui
+
+# gif recorder
+super + shift + Print
+    peek
