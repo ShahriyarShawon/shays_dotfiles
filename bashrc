@@ -1,7 +1,6 @@
 #
 # ~/.bashrc
 #
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -61,32 +60,22 @@ export PS1="\[\e[32m\]\`parse_git_branch\`\[\e[m\] \[\e[36m\]\w\[\e[m\] \[\e[35m
 #export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
 export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=1;34;46:cd=1;34;43:su=1;30;41:sg=1;30;46:tw=1;30;42:ow=1;30;43"
 export PATH=$PATH:$HOME/Documents/scripts
-#Aliases
-
+export PATH=$PATH:$(go env GOPATH)/bin
+APPINVENTOR=/usr/google/appinventor/commands-for-Appinventor/
+export PATH=$PATH:$APPINVENTOR
+export GOPATH=$(go env GOPATH)
 export HKRC="~/.config/sxhkd/sxhkdrc"
 
+#Aliases
 ## Creature comforts
+alias untar="tar -xvzf"
 alias ls='ls --color=auto'
-alias bashrc="vim ~/.bashrc"
-alias rbash="source ~/.bashrc"
+alias rbash="exec bash"
+alias bashrc="vim ~/.bashrc; rbash"
 alias vimrc="vim ~/.vimrc"
-alias pi="ssh pi@10.0.0.100"
-alias tux="ssh shs96@tux.cs.drexel.edu"
 alias feh="feh -x --scale-down --auto-zoom"
 alias du="du -h"
 alias n="nnn"
 
 
 # SYSTEM DEPENDENT
-
-## SXHDK stuff
-alias hk="sxhkd"
-alias hkrc="vim $HKRC"
-alias rhk="pkill -USR1 -x sxhkd" 
-
-## Creature Comforts
-alias kwinshortcuts="qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.shortcutNames"
-alias safewall="gsettings set org.mate.background picture-filename ~/Pictures/Wallpapers/arch.png"
-alias wall="gsettings set org.mate.background picture-filename ~/Pictures/Wallpapers/chinese_cyberpunkgirl.jpg"
-alias schoolwall="gsettings set org.mate.background picture-filename ~/Pictures/Wallpapers/drexel.jpeg"
-
