@@ -1,0 +1,8 @@
+alacritty.yml
+bashrc
+inputrc
+tmux.conf
+vimrc
+xinitrc
+config/rofi/config
+config/sxhkd/sxhkdrc
