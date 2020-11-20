@@ -16,6 +16,8 @@ if [[ $option == "backup-source" ]]; then
     done
     # exclude everything after system dependent for bashrc
     sed -i '/# SYSTEM DEPENDENT/q' bashrc
+    # exclude everything before End of Vundle
+    sed -i '1,/" End of Vundle/d' vimrc
 fi
 
 # Replace current dotfiles with the backed up dotfiles 
