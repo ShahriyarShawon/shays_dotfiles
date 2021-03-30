@@ -2,6 +2,8 @@
 
 option=$1
 
+backup_vim="rsync -r --progress ~/.vim/* vim/ --exclude plugged --exclude bundle"
+
 # Backup old dotfiles with the .OLD extension
 if [[ $option == "backup-old" ]]; then
     for f in $( cat files_to_backup ); do

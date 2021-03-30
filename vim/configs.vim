@@ -1,4 +1,3 @@
-
 filetype plugin on
 filetype indent on
 "filetype on
@@ -34,6 +33,15 @@ nnoremap <leader>h <C-w>h
 nnoremap <leader>l <C-w>l
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
+
+" NerdTree configs
+nnoremap <leader>t :NERDTreeFocus<cr>
+nnoremap <C-s> :NERDTreeToggle<cr>
+
+" Start NERDTree and leave the cursor in it.
+autocmd VimEnter * NERDTree
+
+
 " Turn on wildmenu
 set wildmenu
 
